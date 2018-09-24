@@ -1,29 +1,33 @@
 @media (max-width: 767px) {
+    .container1 {
+        padding-top: 1.5625rem;
+        width: 300px;
+        margin: auto;
+    }
     .team-card:not(:last-child) {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.25rem;
     }
     .page-nav {
         margin-bottom: 7.5rem;
     }
 }
-
 @media (min-width: 768px) {
-    /* .wrapper {
-        width: 48rem;
-        margin: 0 auto;
-    } */
     .page-header {
-        background: url(./../img/ipad-2.jpg) no-repeat;
-        width: 42.125rem;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        padding: 2.875rem 2.9375rem 14.625rem;
+        margin: auto;
+        background: url(./../img/ipad-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 700px;
+    }
+    .container1 {
+        padding-top: 2.875rem;
+        width: 674px;
+        margin: auto;
     }
     .box-navigation {
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 7.5rem;
+        margin-bottom: 9rem;
     }
     .services {
         max-width: 32rem;
@@ -41,7 +45,6 @@
     }
     .page-main {
         width: 48rem;
-        /* padding-bottom: 2.5rem; */
     }
     .title-search {
         margin-bottom: 1.875rem;
@@ -50,43 +53,40 @@
         width: 30.75rem;
         margin: 0 auto;
     }
+    .card-1 {
+        order: -1;
+    }
+    .card-3 {
+        order: -1;
+    }
     .card {
-        display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     .team-card {
         margin-bottom: 0;
     }
-    /* .photo {
-        margin-bottom: 1.0625rem;
-    } */
     .btn-search {
         width: 12.1875rem;
     }
 }
-
-@media (min-width: 768px) and (max-width: 1439px){
-    .team-card:not(:nth-last-child(-n+2)) {
-    margin-bottom: 1.875rem;
+@media (min-width: 768px) and (max-width: 1439px) {
+    .team-card:not(:nth-child(2n)) {
+    margin-bottom: 3.4375rem;
     }
 }
 
 @media (min-width: 1440px) {
-    /* .wrapper {
-        width: 90rem;
-        margin: 0 auto;
-    } */
     .page-header {
-        /* display: block; */
-        /* width: 58.875rem; */
-        background: url(./../img/desktop-3.jpg) no-repeat;
-        /* max-width: 100%;
-        height: auto; */
-        padding: 2.8125rem 15.625rem 14.6875rem;
+        min-width: 1440px;
+        background: url(./../img/desktop-3.jpg); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
     }
-    .box-navigation {
-        margin: 0 auto 7.5rem;
+    .container1 {
+       width: 942px;
+       margin: auto;
     }
     .info {
         margin: 0 auto 1.875rem;

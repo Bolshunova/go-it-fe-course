@@ -17,28 +17,19 @@ body {
 font-size: 16px;
 }
 /* ---------------------------------------Header------------------------------------ */
-.wrapper {
-    width: 20rem;
-    margin: 0 auto;
-}
 .page-header {
-    background: url(./../img/Mobile-1.jpg) no-repeat;
-    display: block;
-    height: auto;
-    color: #ffffff;
-    padding: 1.5625rem 0.3125rem 8.125rem;
-    width: 19.375rem;
-    margin: auto;
+    background: url(./../img/Mobile-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 540px;
+    color: #ffffff;  
 }
 .box-navigation {
-    
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 2.375rem
+    margin-bottom: 2.0625rem
 }
-/* .page-nav {
-    margin-bottom: 7.5rem;
-} */
 .site-navigation {
     display: flex;
     justify-content: center;
@@ -112,7 +103,6 @@ font-size: 16px;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.375rem;
-
 }
 .team-box  {
     width: 14.6875rem;
@@ -120,7 +110,15 @@ font-size: 16px;
     margin: 0 auto;
 }
 .photo {
-     /* margin-bottom: 0.625rem; */
+    width: 121px;
+    height: 121px;
+    display: block;
+    margin: 0 auto 14px auto;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .team-card {
     position: relative;
