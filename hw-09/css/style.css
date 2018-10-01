@@ -1,0 +1,282 @@
+@import "fonts.css";
+/* ------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+body {
+font-size: 16px;
+}
+/* ---------------------------------------Header------------------------------------ */
+.page-header {
+    background: url(./../img/Mobile-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+      
+}
+.head {
+    color: #ffffff;
+}
+.site-navigation {
+    display: flex;
+    justify-content: center;
+}
+.nav-item {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 0.875rem; 
+    padding: 0.5rem 1.125rem;
+}
+.nav-item:hover {
+    color: #ffffff;
+    text-decoration: none;
+    display: fixed;
+}
+.login {
+border: 0.125rem solid rgba(255, 255, 255, 0);
+}
+.login:hover {
+    border: 0.125rem solid #fff;
+    border-radius: 2.1875rem;
+}
+.sign-up {
+    border: 0.125rem solid rgba(255, 255, 255, 0);
+    padding: 0.625rem 0.9375rem;
+}
+.sign-up:hover {
+    border: 0.125rem solid #fff;
+    border-radius: 2.1875rem;
+}
+.logo {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    cursor: pointer;
+}
+.services {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.8125rem;
+}
+.info {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin: 0 auto 0.8125rem;
+}
+.button-find {
+    display: block;
+    margin: auto;
+    width: 17.5rem;
+    height: 2.5rem;
+    border: none;
+    background: none;
+    border: 0.0625rem solid #ff4e50;
+    background-color: #ff4e50;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+/* ------------------------------------Main-------------------------------------- */
+.page-main {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+.title-search {
+    padding: 4.125rem 0 0 0;
+    margin-bottom: 0.9375rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.375rem;
+    margin-bottom: 37px;
+}
+.photo {
+    width: 121px;
+    height: 121px;
+    display: block;
+    margin: 0 auto 14px auto;
+}
+.card {
+    border: none;
+    margin: 0 auto;
+}
+.team-card {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    min-height: 230px;
+}
+.card-1::after {
+    content: url(./../img/icon-red.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+}
+.card-2::after {
+    content: url(./../img/icon-yellow.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+}
+.card-3::after {
+    content: url(./../img/icon-green.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+}
+.card-4:after {
+    content: url(./../img/icon-blue.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+}
+.link-team {
+    color: #000000;
+}
+.name-partner {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 11px;
+}
+.info-list {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #666666;
+}
+/* ------------------------------------Footer-------------------------------------- */
+.btn-search {
+    display: block;
+    margin: auto;
+    width: 17.5rem;
+    height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #ff4e50;
+    background-color: #fff;
+    border: 0.125rem solid #ff4e50;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.page-footer {
+    padding: 2.5rem 0 3.4375rem;
+}
+
+/* --MEDIA-- */
+@media screen and (max-width: 767px) {
+    .box-navigation {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .site-navigation {
+        padding-bottom: 130px; 
+    }
+    .title-search {
+        margin-bottom: 20px;
+    }
+    .info {
+       max-width: 14.0625rem;
+    }
+    .team-box {
+        width: 260px;
+        margin: 0 auto;
+    }
+    .card, .team-card {
+        width: 260px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-header {
+        background-image: url(../img/ipad-2.jpg);
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+        min-height: 700px;
+    }
+    .box-navigation {
+        flex-direction: row-reverse;
+        padding: 45px 0 145px;
+    }
+    .site-guide {
+        margin: 0 auto;
+    }
+    .services {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .info {
+        font-size: 24px;
+        margin: 0 auto 30px;
+    }
+    .button-find {
+        width: 226px;
+    }
+    .page-main, .team-box {
+        width: 720px;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 492px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .team-card {
+        width: 235px;    
+    }
+    .btn {
+        margin: 0 auto;
+    }
+    .btn-search {
+        width: 192px;
+        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .page-header {
+        background-image: url(../img/desktop-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .page-main, .team-box {
+        width: 915px;
+    }
+    .card {
+        width: 942px;
+    }
+}
