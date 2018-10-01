@@ -22,8 +22,12 @@ font-size: 16px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 540px;
+    /* min-height: 540px; */
+    
+}
+.container1 {
     color: #ffffff;  
+    padding-bottom: 234px;
 }
 .box-navigation {
     display: flex;
@@ -174,7 +178,6 @@ font-size: 16px;
     font-weight: 300;
     font-size: 0.875rem;
     color: #666666;
-    margin: auto;
 }
 /* ------------------------------------Footer-------------------------------------- */
 .btn-search {

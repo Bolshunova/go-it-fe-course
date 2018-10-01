@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
     .container1 {
-        padding-top: 1.5625rem;
+        padding: 25px 0 138px;
         width: 300px;
         margin: auto;
     }
@@ -13,10 +13,11 @@
 }
 @media (min-width: 768px) {
     .page-header {
-        margin: auto;
+        /* margin: auto; */
         background: url(./../img/ipad-2.jpg);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover; 
         min-height: 700px;
     }
     .container1 {
@@ -74,14 +75,17 @@
     .team-card:not(:nth-child(2n)) {
     margin-bottom: 3.4375rem;
     }
+    .page-header {
+        background: url(./../img/desktop-3.jpg); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
 }
 
 @media (min-width: 1440px) {
     .page-header {
-        min-width: 1440px;
         background: url(./../img/desktop-3.jpg); 
         background-repeat: no-repeat;
-        background-position: center;
         background-size: cover; 
     }
     .container1 {
