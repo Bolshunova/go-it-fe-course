@@ -20,49 +20,42 @@ font-size: 16px;
 .page-header {
     background: url(./../img/Mobile-1.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     min-height: 540px;
-      
+    padding: 0.5rem 1.125rem;   
 }
 .head {
     color: #ffffff;
-}
-.site-navigation {
-    display: flex;
-    justify-content: center;
 }
 .nav-item {
     color: #ffffff;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 0.875rem; 
-    padding: 0.5rem 1.125rem;
 }
 .nav-item:hover {
     color: #ffffff;
     text-decoration: none;
     display: fixed;
 }
-.login {
-border: 0.125rem solid rgba(255, 255, 255, 0);
-}
-.login:hover {
-    border: 0.125rem solid #fff;
-    border-radius: 2.1875rem;
-}
+.login, 
 .sign-up {
     border: 0.125rem solid rgba(255, 255, 255, 0);
     padding: 0.625rem 0.9375rem;
 }
+.login:hover,
 .sign-up:hover {
     border: 0.125rem solid #fff;
     border-radius: 2.1875rem;
+}
+.logo-link {
+    text-align: center;
 }
 .logo {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.25rem;
-    text-align: center;
     cursor: pointer;
 }
 .services {
@@ -83,7 +76,7 @@ border: 0.125rem solid rgba(255, 255, 255, 0);
 .button-find {
     display: block;
     margin: auto;
-    width: 17.5rem;
+    width: 254px;
     height: 2.5rem;
     border: none;
     background: none;
@@ -122,8 +115,6 @@ border: 0.125rem solid rgba(255, 255, 255, 0);
 }
 .team-card {
     position: relative;
-    display: flex; 
-    flex-direction: column;
     min-height: 230px;
 }
 .card-1::after {
@@ -175,7 +166,9 @@ border: 0.125rem solid rgba(255, 255, 255, 0);
     font-size: 0.875rem;
     color: #666666;
 }
-/* ------------------------------------Footer-------------------------------------- */
+.button {
+    padding: 2.5rem 0 3.4375rem;
+}
 .btn-search {
     display: block;
     margin: auto;
@@ -190,10 +183,6 @@ border: 0.125rem solid rgba(255, 255, 255, 0);
     border-radius: 2rem;
     cursor: pointer;
 }
-.page-footer {
-    padding: 2.5rem 0 3.4375rem;
-}
-
 /* --MEDIA-- */
 @media screen and (max-width: 767px) {
     .box-navigation {
@@ -223,12 +212,10 @@ border: 0.125rem solid rgba(255, 255, 255, 0);
     .page-header {
         background-image: url(../img/ipad-2.jpg);
         background-repeat: no-repeat;
-        /* background-position: center; */
         background-size: cover;
         min-height: 700px;
     }
     .box-navigation {
-        flex-direction: row-reverse;
         padding: 45px 0 145px;
     }
     .site-guide {
@@ -249,21 +236,16 @@ border: 0.125rem solid rgba(255, 255, 255, 0);
         width: 720px;
     }
     .card {
-        display: flex;
-        flex-direction: row;
         width: 492px;
-        justify-content: space-around;
-        flex-wrap: wrap;
     }
     .team-card {
         width: 235px;    
     }
-    .btn {
+    .button {
         margin: 0 auto;
     }
     .btn-search {
-        width: 192px;
-        
+        width: 192px;   
     }
 }
 
