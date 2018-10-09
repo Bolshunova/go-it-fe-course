@@ -23,10 +23,8 @@ font-size: 16px;
     background-position: center;
     background-size: cover;
     min-height: 540px;
-    padding: 0.5rem 1.125rem;   
-}
-.head {
-    color: #ffffff;
+    padding: 0.5rem 1.125rem;
+    color: #ffffff;   
 }
 .nav-item {
     color: #ffffff;
@@ -43,6 +41,7 @@ font-size: 16px;
 .sign-up {
     border: 0.125rem solid rgba(255, 255, 255, 0);
     padding: 0.625rem 0.9375rem;
+    background: none;
 }
 .login:hover,
 .sign-up:hover {
@@ -57,6 +56,9 @@ font-size: 16px;
     font-weight: 700;
     font-size: 1.25rem;
     cursor: pointer;
+}
+.box-info {
+    padding-bottom: 140px;
 }
 .services {
     font-family: 'Montserrat';
@@ -94,9 +96,9 @@ font-size: 16px;
     width: 300px;
     text-align: center;
     margin: auto;
+    padding-top: 4.125rem;
 }
 .title-search {
-    padding: 4.125rem 0 0 0;
     margin-bottom: 0.9375rem;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -185,8 +187,10 @@ font-size: 16px;
 }
 /* --MEDIA-- */
 @media screen and (max-width: 767px) {
-    .box-navigation {
+    .page-header {
         padding-top: 20px;
+    }
+    .box-navigation {
         margin-bottom: 20px;
     }
     .site-navigation {
@@ -214,9 +218,13 @@ font-size: 16px;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 700px;
+        padding-top: 45px;
     }
     .box-navigation {
-        padding: 45px 0 145px;
+        margin-bottom:145px;
+    }
+    .box-info {
+        padding-bottom: 225px;
     }
     .site-guide {
         margin: 0 auto;
@@ -255,8 +263,11 @@ font-size: 16px;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .box-info {
+        padding-bottom: 280px;
+    }
     .page-main, .team-box {
-        width: 915px;
+        width: 930px;
     }
     .card {
         width: 942px;
