@@ -1,0 +1,23 @@
+%position-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+  }
+  
+  %button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  %flex-position {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ %icon-position {
+    position: absolute;
+    left: 0;
+ }

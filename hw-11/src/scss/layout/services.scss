@@ -1,0 +1,99 @@
+.services {
+    min-width: 1200px;
+    padding-top: 44px;
+}
+
+  .services__subtitle {
+    @include font-settings('Kaushan Script', 24px, 500, none, map-get($map: $colors, $key: primary-dark));
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services__title {
+    @include font-settings('Montserrat', 30px, 700, uppercase, map-get($map: $colors, $key: primary-dark));
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 105px;
+
+    &::after {
+        position: absolute;
+        bottom: -160%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+        content: '';
+        display: block;
+        margin: auto;
+        width: 60px;
+        height: 3px;
+        background-color: map-get($colors, light-pink);
+        }
+}
+
+.services__service-box {
+    width: 1165px;
+    min-height: 334px;
+    margin: auto;
+    @extend %flex-position;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;  
+}
+
+.services__item {
+    width: 388px;
+    position: relative;
+    padding-left: 62px;
+    box-sizing: border-box;  
+}
+
+.services__service-text {
+    display: inline-block;
+    width: 335px;
+}
+
+.services__service_info {
+    @include font-settings('Montserrat', 14px, 300, uppercase, map-get($map: $colors, $key: primary-dark));
+    line-height: 12px;
+    margin-bottom: 20px;
+}
+
+.services__text {
+    @include font-settings('Roboto', 16px, 300, none, map-get($map: $colors, $key: secondary-dark));
+    text-align: left;
+}
+
+.services__icon-serv1:before {
+    content: url(./../img/icon/icon-1.svg);
+    @extend %icon-position;
+}
+
+.services__icon-serv2:before {
+    content: url(./../img/icon/icon-2.svg);
+    @extend %icon-position;
+}
+
+.services__icon-serv3:before {
+    content: url(./../img/icon/icon-3.svg);
+    @extend %icon-position;
+}
+
+.services__icon-serv4:before {
+    content: url(./../img/icon/icon-4.svg);
+    @extend %icon-position;
+}
+
+.services__icon-serv5:before {
+    content: url(./../img/icon/icon-5.svg);
+    @extend %icon-position;
+}
+
+.services__icon-serv6:before {
+    content: url(./../img/icon/icon-6.svg);
+    @extend %icon-position;
+}
+
+.services__symbol-card {
+    vertical-align: top;
+    margin-right: 25px;
+}

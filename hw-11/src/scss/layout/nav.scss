@@ -1,0 +1,57 @@
+.nav__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: 620px;
+        flex-basis: 620px; 
+}
+
+.nav__menu {
+    @extend %flex-position;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 495px;
+        flex-basis: 495px;
+    position: relative;
+}
+
+.nav__link {
+    @include font-settings('Montserrat', 14px, 400, uppercase, map-get($map: $colors, $key: text-white));
+    line-height: 14px;
+    position: relative;
+
+    &::after {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: map-get($colors, hover-yellow);
+        margin-top: 12px;
+    }
+    &:hover::after,
+    &:hover {
+    opacity: 1;
+    color: map-get($colors, hover-yellow);
+    }
+}
+
+.nav__icon-nav {
+    display: inline-block;
+    fill: map-get($colors, text-white);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    
+    &:hover {
+        fill: map-get($colors, hover-yellow);  
+    }
+}
+
+
+

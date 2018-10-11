@@ -1,0 +1,165 @@
+.our_team__subtitle {
+    @include font-settings('Kaushan Script', 24px, 500, none, map-get($map: $colors, $key: primary-dark));
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our_team__title {
+    @include font-settings('Montserrat', 30px, 700, uppercase, map-get($map: $colors, $key: primary-dark));
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 85px;
+
+    &::after {
+        position: absolute;
+        bottom: -140%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+        content: '';
+        display: block;
+        margin: auto;
+        width: 60px;
+        height: 3px;
+        background-color: map-get($colors, light-pink);
+    }
+}
+
+.our_team__inform-our_team {
+    color: map-get($colors,  secondary-dark);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 950px;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+.our_team__box-phototeam {
+    max-width: 1200px;
+    @extend %flex-position;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.our_team__member {
+    width: 380px;
+    position: relative;
+
+    &:hover .our_team__member-photo {
+        -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+        transform: translate(-10px, -10px);
+        -webkit-transition-duration: 200ms;
+        -o-transition-duration: 200ms;
+        transition-duration: 200ms; 
+    }
+
+    &:hover .our_team__team-overlay {
+        opacity: 0.9;  
+        -webkit-transform: translate(-10px, -10px);  
+        -ms-transform: translate(-10px, -10px);  
+        transform: translate(-10px, -10px);
+        -webkit-transition-duration: 200ms;
+        -o-transition-duration: 200ms;
+        transition-duration: 200ms; 
+    }
+    &:hover .social-box {
+        opacity: 1;
+        -webkit-transition-duration: 200ms;
+        -o-transition-duration: 200ms;
+                transition-duration: 200ms; 
+    }
+}
+
+.our_team__member-photo {
+    margin-bottom: 30px; 
+    -webkit-transition: 0.2s; 
+    -o-transition: 0.2s; 
+    transition: 0.2s; 
+}
+
+.our_team__member-name {
+    @include font-settings('Montserrat', 14px, 300, uppercase, map-get($map: $colors, $key: primary-dark));
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.our_team__member-info {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: map-get($colors, primary-light);
+}
+
+.our_team__team-overlay {
+    width: 380px;
+    height: 470px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @extend %icon-position;
+    top: 0;
+    opacity: 0;
+    background-image: -webkit-linear-gradient( 90deg, rgb( 252, 227, 138 ) 0%, rgb( 243, 129, 129 ) 100%);
+    z-index: 1;  
+    -webkit-transition: 0.2s;  
+    -o-transition: 0.2s;  
+    transition: 0.2s; 
+    -webkit-box-shadow: 10px 10px 1px 1px map-get($colors, icon-green);
+    box-shadow: 10px 10px 1px 1px map-get($colors, icon-green);
+}
+
+.social-box {
+    width: 226px;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    @extend %flex-position;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;   
+}
+
+.social-box__item {
+    width: 55px;
+    height: 55px;
+    margin-right: 2px;
+    background-color: map-get($colors, hover-yellow);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    z-index: 1;
+
+    &:hover {
+        background-color: #f38181;
+    }
+
+    &:hover .social-box__icon-social {
+        fill: map-get($colors, text-white);
+    }
+}
+
+.social-box__icon-social {
+    fill: map-get($colors, light-pink);
+}

@@ -1,0 +1,45 @@
+.footer {
+    width: 1200px;
+    margin: auto;
+    border-top: map-get($colors, border-light) 1px solid;
+    @extend %flex-position;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 15px 12px;
+}
+
+.footer__info-site {
+    @include font-settings('Montserrat', 14px, 300, none, map-get($map: $colors, $key: primary-light));
+}
+
+.footer__color-word {
+    color: map-get($colors, note-accent);
+}
+
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+  .footer__email-input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 230px;
+    height: 40px;
+    border: 1px solid map-get($colors, border-light);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+  .footer__tab-sub {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 30px;
+    width: 150px;
+    height: 40px;
+    background-color: map-get($colors, icon-green);
+    @extend %button;
+    @include font-settings('Montserrat', 14px, 700, uppercase, map-get($map: $colors, $key: text-white));
+  }

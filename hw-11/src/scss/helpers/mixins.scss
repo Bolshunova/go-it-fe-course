@@ -1,0 +1,7 @@
+@mixin font-settings($family: '', $size: '', $weight: 400, $transform: uppercase, $colors: ''){
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: $transform;
+    color: $colors;
+}
