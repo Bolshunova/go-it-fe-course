@@ -27,24 +27,23 @@ const adminPassword = 'm4ngo1zh4ackz0r';
 
 const userName = prompt('Введите Ваш логин!');
 
-let cancelByUser = 'Отменено пользователем!';
-let wrongInput = 'Доступ запрещен!';
-let toComeIn = 'Добро пожаловать!';
+const CANCEL_MESSAGE = 'Отменено пользователем!';
+const WRONG_INPUT_MESSAGE = 'Доступ запрещен!';
+const WELCOME_MESSAGE = 'Добро пожаловать!';
 let password;
 
 
 if (userName === adminLogin) { 
   password = prompt('Введите Ваш пароль!');
+} 
+if (password === adminPassword) {
+  alert (WELCOME_MESSAGE);
+} else if (password === null) {
+  alert (CANCEL_MESSAGE);
 } else if  (userName === null) { 
-  alert (cancelByUser);
+  alert (CANCEL_MESSAGE);
 } else {  
-  alert (wrongInput);
+  alert (WRONG_INPUT_MESSAGE);
 }
 
-if (password === adminPassword) {
-  alert (toComeIn);
-} else if (password === null) {
-  alert (cancelByUser);
-} else {
-  alert (wrongInput);
-} 
+
