@@ -33,17 +33,18 @@ const WELCOME_MESSAGE = 'Добро пожаловать!';
 let password;
 
 
-if (userName === adminLogin) { 
-  password = prompt('Введите Ваш пароль!');
-} 
-if (password === adminPassword) {
-  alert (WELCOME_MESSAGE);
-} else if (password === null) {
+
+if  (userName === null) { 
   alert (CANCEL_MESSAGE);
-} else if  (userName === null) { 
-  alert (CANCEL_MESSAGE);
-} else {  
+} else if (userName !== adminLogin) {
   alert (WRONG_INPUT_MESSAGE);
+} else if (userName === adminLogin) { 
+  password = prompt('Введите Ваш пароль!');
+    if (password === adminPassword) {
+      alert (WELCOME_MESSAGE);
+    } else if (password === null) {
+      alert (CANCEL_MESSAGE);
+    } else {  
+      alert (WRONG_INPUT_MESSAGE);
+    }
 }
-
-
