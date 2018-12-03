@@ -22,24 +22,24 @@
 let userInput;
 const numbers = [];
 let total = 0;
-let sum;
 
 do {
   userInput = prompt ('Введите число');
-    if (userInput !== isNaN) {
-      alert ('Вы ввели не число!');
-    } else {
-    numbers.push(Number (userInput));
-    }
+  numbers.push(userInput);   
+    if (isNaN(userInput) || userInput === "") {
+      alert ('Было введено не число, попробуйте еще раз')
+    };
 } while (userInput !== null);
 
-const arrLength = numbers.length > total;
 
-if (arrLength) {
+
   for (let item of numbers) {
-    sum = item + item;
-      } alert (`Общая сумма чисел равна ${sum}`);  
+    if (numbers.length > 0) {
+      total += +item; 
+      alert (`Общая сумма чисел равна ${total}`);
+  }
 }
-
+  // console.log(item);
   // console.log(numbers);
-  // console.log(sum);
+
+  
