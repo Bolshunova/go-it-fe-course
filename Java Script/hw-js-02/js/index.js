@@ -1,7 +1,7 @@
+
+// Домашнее задание
 /*
-  Написать следующий скрипт:
-  
-    - При загрузке страницы пользователю предлагается ввести через prompt число. 
+- При загрузке страницы пользователю предлагается ввести через prompt число. 
       Число введенное пользователем записывается в массив чисел.
       
     - Операция ввода числа пользователем и сохранение в массив продолжается до
@@ -22,3 +22,24 @@
 let userInput;
 const numbers = [];
 let total = 0;
+let sum;
+
+do {
+  userInput = prompt ('Введите число');
+    if (userInput !== isNaN) {
+      alert ('Вы ввели не число!');
+    } else {
+    numbers.push(Number (userInput));
+    }
+} while (userInput !== null);
+
+const arrLength = numbers.length > total;
+
+if (arrLength) {
+  for (let item of numbers) {
+    sum = item + item;
+      } alert (`Общая сумма чисел равна ${sum}`);  
+}
+
+  // console.log(numbers);
+  // console.log(sum);
