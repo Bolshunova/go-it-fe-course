@@ -1,4 +1,4 @@
-
+'use strict';
 // Домашнее задание
 /*
 - При загрузке страницы пользователю предлагается ввести через prompt число. 
@@ -23,23 +23,30 @@ let userInput;
 const numbers = [];
 let total = 0;
 
+
 do {
   userInput = prompt ('Введите число');
-  numbers.push(userInput);   
-    if (isNaN(userInput) || userInput === "") {
-      alert ('Было введено не число, попробуйте еще раз')
-    };
-} while (userInput !== null);
+
+  let num = (+userInput);
+
+  if (userInput !== null) {
+      if (Number.isNaN(num)) {
+        alert ('Было введено не число, попробуйте еще раз'); 
+      } else {
+        numbers.push(num);  
+      }  
+  } 
+
+} while (userInput !== null)
 
 
-
+if (numbers.length > 0) {
   for (let item of numbers) {
-    if (numbers.length > 0) {
-      total += +item; 
+    total += item; }
       alert (`Общая сумма чисел равна ${total}`);
-  }
 }
-  // console.log(item);
-  // console.log(numbers);
+ 
+  console.log(numbers);
+  console.log(total);
 
   
