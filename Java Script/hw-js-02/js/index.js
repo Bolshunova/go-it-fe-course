@@ -23,20 +23,17 @@ let userInput;
 const numbers = [];
 let total = 0;
 
-
 do {
   userInput = prompt ('Введите число');
 
-  let num = (+userInput);
+  const isValidInput = userInput !== null && !Number.isNaN(+userInput);
+  // console.log(typeof isValidInput);
 
-  if (userInput !== null) {
-      if (Number.isNaN(num)) {
-        alert ('Было введено не число, попробуйте еще раз'); 
-      } else {
-        numbers.push(num);  
-      }  
-  } 
-
+  if (isValidInput) {
+    numbers.push(+userInput); 
+  } else {
+    alert ('Было введено не число, попробуйте еще раз'); 
+  }   
 } while (userInput !== null)
 
 
@@ -46,7 +43,7 @@ if (numbers.length > 0) {
       alert (`Общая сумма чисел равна ${total}`);
 }
  
-  console.log(numbers);
-  console.log(total);
+  // console.log(numbers);
+  // console.log(total);
 
   
